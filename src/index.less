@@ -1,10 +1,21 @@
+//Vars and Mixins
+@import './LESS/variables.less';
+@import './LESS/mixins.less';
+
+//General Styles
+@import './LESS/reset.less';
+@import './LESS/global.less';
 
 // Components
-@import "./nav/nav.less";
-@import "./header/header.less";
-@import "./card/card.less";
+@import './components/header/header.less';
+@import './components/splash/splash.less';
+@import './components/card/card.less';
+@import './components/footer/footer.less';
 
-//variables
+
+//Escapes
+@mobile: ~"(min-width: 500px)";
+@tablet: ~"(min-width:  800px)";
+@desktop: ~"(max-width: 1024px)";
 
 
-// General Styles 
