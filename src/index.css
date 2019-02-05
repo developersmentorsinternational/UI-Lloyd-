@@ -201,3 +201,14 @@ header nav a {
   color: #FFFFFF;
   margin: 2.5px 5px;
 }
+.splash {
+  background-image: url('../../img/mobileWidthHeader.jpg');
+}
+body {
+  background-image: url('./img/mobileWidthHeader.jpg');
+}
+@media (min-width:  800px) {
+  body {
+    background-image: url('./img/fullWidthHeader.jpg');
+  }
+}
