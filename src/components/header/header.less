@@ -1,9 +1,40 @@
+@import '../../LESS/variables.less';
+@import '../../LESS/mixins.less';
 
-// header{
-//     nav{
 
-//     }
-//     @media @tablet{}
-//     @media @desktop{}
-// }
+header{
+    .center-flex;
+    justify-content: space-between;
+    // padding: 5px;
+    // border: 2px solid @mentors-blue;
+    margin: 0 0 10px 0;
+    background-color: @mentors-blue;
+    .nav-img{
+        .center-flex;
+        width: 69%;
+        background-color: @mentors-blue;  
+        border-radius: 10px; 
+        margin:5px; 
+        padding: 2px;    
+    }
+
+    nav{
+        
+        width: 30%;
+        .center-flex;
+        flex-direction: column;
+        a{
+            .center-flex;
+            
+            width: 15%;
+            font-size: 3.2rem; 
+            text-decoration: none;
+            color: @white; 
+            margin: 2.5px 5px;
+                     
+        }
+    }
+    @media @tablet{}
+    @media @desktop{}
+}
 

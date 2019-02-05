@@ -1,3 +1,6 @@
+.help {
+  border: 1px solid red;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -134,14 +137,14 @@ html {
 }
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
 }
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Indie Flower', cursive;
+  font-family: 'Raleway', 'Arial', sans-serif;
 }
 h1 {
   font-size: 4rem;
@@ -163,8 +166,38 @@ img {
   max-width: 100%;
   height: auto;
 }
-.container {
-  max-width: 800px;
-  width: 100%;
-  margin: 0 auto;
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 10px 0;
+  background-color: #57C6FF;
+}
+header .nav-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 69%;
+  background-color: #57C6FF;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 2px;
+}
+header nav {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header nav a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 15%;
+  font-size: 3.2rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  margin: 2.5px 5px;
 }
