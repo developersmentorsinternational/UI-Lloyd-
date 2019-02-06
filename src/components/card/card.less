@@ -8,10 +8,8 @@
     padding: 2rem 2rem;
     border: 2px #eee solid;
     border-radius: 15px;
-    margin: 3rem;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    margin: 25px;
+    .center-flex(space-evenly, center);
     flex-direction: column;
     text-align: center;
     // h3{
@@ -20,6 +18,10 @@
     // p{
 
     // }
-    @media @tablet{}
-    @media @desktop{}
+    @media @tablet{
+        width: 750px;
+    }
+    @media @desktop{
+        width: 950px;
+    }
 }

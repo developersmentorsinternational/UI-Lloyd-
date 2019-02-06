@@ -3,8 +3,7 @@
 
 
 header{
-    .center-flex;
-    justify-content: space-between;
+    .center-flex(space-between);
     position: fixed;
     width: 100%;
     // padding: 5px;
@@ -13,8 +12,7 @@ header{
     background-color: @mentors-blue;
     .nav-img{
         .center-flex;
-        width: 69%;
-        background-color: @mentors-blue;  
+        width: 69%; 
         border-radius: 10px; 
         margin:5px; 
         padding: 2px;    
@@ -34,7 +32,22 @@ header{
             margin: 2.5px 5px;
         }
     }
-    @media @tablet{}
-    @media @desktop{}
+    @media @tablet{
+        margin: 0 0 10px 0;
+        .center-flex();
+        nav{
+            .center-flex(space-around);
+            flex-direction: row;
+            align-items: space-between;
+            width: 50%;
+        }
+        .nav-img{
+            .center-flex;
+        }
+    }
+    @media @desktop{
+        .center-flex(flex-start, center)
+        
+    }
 }
 

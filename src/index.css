@@ -168,9 +168,8 @@ img {
 }
 header {
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   position: fixed;
   width: 100%;
   margin: 0 0 10px 0;
@@ -181,7 +180,6 @@ header .nav-img {
   justify-content: center;
   align-items: center;
   width: 69%;
-  background-color: #57C6FF;
   border-radius: 10px;
   margin: 5px;
   padding: 2px;
@@ -203,6 +201,34 @@ header nav a {
   color: #FFFFFF;
   margin: 2.5px 5px;
 }
+@media (min-width:  800px) {
+  header {
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    align-items: space-between;
+    width: 50%;
+  }
+  header .nav-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (min-width: 1000px) {
+  header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+}
 .splash {
   height: 90%;
   width: 450px;
@@ -212,12 +238,22 @@ header nav a {
   padding: 2rem 2rem;
   border: 2px #eee solid;
   border-radius: 15px;
-  margin: 3rem;
+  margin: 25px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+@media (min-width:  800px) {
+  .splash {
+    width: 750px;
+  }
+}
+@media (min-width: 1000px) {
+  .splash {
+    width: 950px;
+  }
 }
 .card {
   height: 90%;
@@ -228,12 +264,45 @@ header nav a {
   padding: 2rem 2rem;
   border: 2px #eee solid;
   border-radius: 15px;
-  margin: 3rem;
+  margin: 25px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
   text-align: center;
+}
+@media (min-width:  800px) {
+  .card {
+    width: 750px;
+  }
+}
+@media (min-width: 1000px) {
+  .card {
+    width: 950px;
+  }
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  max-height: 75px;
+  background-color: #57C6FF;
+}
+footer .footer-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-basis: auto;
+}
+footer .footer-center h4 {
+  flex-basis: auto;
+}
+footer .footer-center p {
+  flex-basis: auto;
+  flex-shrink: 1;
 }
 body {
   background-image: url('./img/mobileWidthHeader.jpg');
