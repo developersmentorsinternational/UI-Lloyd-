@@ -251,6 +251,7 @@ header nav a {
   background-color: #009DDC;
   height: 70px;
   width: 60%;
+  border: 1px solid #FFFFFF;
   border-radius: 15px;
   font-size: 2.5rem;
   animation: pulse 15s infinite;
@@ -292,14 +293,41 @@ header nav a {
   flex-direction: column;
   text-align: center;
 }
+.card img {
+  border-radius: 15px;
+  width: 95%;
+}
+.card iframe {
+  max-width: 95%;
+  border-radius: 15px;
+}
+.card button.card-button {
+  background-color: #009DDC;
+  height: 70px;
+  width: 60%;
+  border: 1px solid #FFFFFF;
+  border-radius: 15px;
+  font-size: 2.5rem;
+  animation: pulse 15s infinite;
+}
 @media (min-width:  800px) {
   .card {
     width: 750px;
+  }
+  .card img {
+    margin-bottom: 2rem;
+  }
+  .card iframe {
+    margin-bottom: 2rem;
   }
 }
 @media (min-width: 1000px) {
   .card {
     width: 950px;
+  }
+  .card button.card-button {
+    margin-top: 2rem;
+    width: 50%;
   }
 }
 footer {
@@ -315,6 +343,13 @@ footer .footer-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+footer .footer-center .donate {
+  background-color: #1CC31C;
+  height: 50px;
+  font-size: 2rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 body {
   background-image: url('./img/mobileWidthHeader.jpg');
