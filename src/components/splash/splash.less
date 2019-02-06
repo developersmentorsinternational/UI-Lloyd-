@@ -14,12 +14,33 @@
     align-items: center;
     flex-direction: column;
     text-align: center;
-    // h3{
-
-    // }
+    h2{
+        font-size: 4rem;
+    }
     // p{
 
     // }
+    button.stories{
+        background-color:@mentors-blue;
+        height: 70px;
+        width: 60%;
+        border-radius: 15px;
+        font-size: 2.5rem;
+        animation: pulse 15s infinite;
+    }
+
+    @keyframes pulse {
+        0% {
+            background-color:@mentors-blue;
+        }
+        50% {
+            background-color: @mentors-green;
+        }
+        100% {
+            background-color:@mentors-blue;
+        }
+    }
+    
     @media @tablet{
         width: 750px;
     }
