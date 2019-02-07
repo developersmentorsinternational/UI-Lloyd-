@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Nationwide Transport</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="css/navbar.css" />
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top opaque-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navMain">
+                    <span class="glyphicon glyphicon-th" style="color:white;"></span>
+
+                </button>
+                <a class="navbar-brand" href="#">Nationwide Transport</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navMain">
+                <ul class="nav navbar-nav pull-right">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Services and Pricing</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="horizon scroll">
+
+    </div>
+    <div class="middle scroll">
+
+
+    </div>
+    <div class="front scroll">
+        <div class="intro ">
+            <img src="img/nationwide_logo.png">
+        </div>
+        <div class="first page">
+            <div id="welcome">
+                <h3>Nationwide Transport Services</h3>
+                <p>
+                    Welcome to Nationwide Transport Services - We are a freight transportation business specializing in the transport of heavy machinery, oversize shipments, LTL and agriculture equipment to any destination within the United States! We pride ourself on being a reliable and successful business. We offer insured door to door service, port to business and same day shipping. Our prices are only matched by our outstanding customer service. See what NTS can do for you, contact us at (877) 278-3135.
+                </p>
+                <p>
+                Feel free to call our professional service representatives so that they may walk you through the process of shipping and answer any questions you may have. There is no sign up or hassle to receive free transport estimates from our business. See what NTS can do for you at (877) 278-3135.
+                </p>
+            </div>
+        </div>
+        <div class="second page">
+            <img src="./img/girl_phone_app.png" />
+            <!--<h1>Contact Us</h1>-->
+            <div id="carShipping" class="text">
+                <h3>Car Shipping Services</h3>
+                <p>
+                    Car Shipping is a crucial part of many needs, whether you are shipping to buy, shipping to sell or even moving yourself. Nationwide will be there for all needs! We will make sure your vehicle is always picked up on time and surely delivered in a timely matter! Each vehicle transported is always insured free of charge! We also offer Door-to-Door service to make sure you are most satisfied with your transport! Still not sure if NTS is right for you? Give us a call and get your free quote today!
+
+                    Please feel free to call our professional customer service representatives, so that they may walk you through the process and answer any questions or concerns you may have. Thanks for your time and have an amazing day!
+                </p>
+            </div>
+        </div>
+        <div class="third page">
+            <h3>Contact Us</h3>
+            <form action="/my-handling-form-page" method="post">
+                  <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="user_name">
+                  </div>
+
+                  <div>
+                    <label for="mail">E-mail:</label>
+                    <input type="email" id="mail" name="user_email">
+                  </div>
+
+                  <div>
+                    <label for="msg">Message:</label>
+                    <textarea id="msg" name="user_message"></textarea>
+                  </div>
+                 
+                  <div class="button">
+                    <button type="submit">Send your message</button>
+                  </div>
+            </form>
+        </div>
+        <!--<div class="page "></div>-->
+        <!--<div class="page "></div>-->
+
+    </div>
+
+    <!--<div class="scroll"><h1>Deez Nutz</h1></div>-->
+    <!--<div class="scroll"><h1>Deez Nutz</h1></div>-->
+    <!--<div class="scroll"><h1>Deez Nutz</h1></div>-->
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/jquery.jInvertScroll.js"></script>
+    <script type="text/javascript">
+    (function($) {
+        $.jInvertScroll(['.scroll'],        // an array containing the selector(s) for the elements you want to animate
+            {
+            height: 6000,                   // optional: define the height the user can scroll, otherwise the overall length will be taken as scrollable height
+            onScroll: function(percent) {   //optional: callback function that will be called when the user scrolls down, useful for animating other things on the page
+                console.log(percent);
+            }
+        });
+    }(jQuery));
+    </script>
+    <script type="text/javascript" src="js/navbar.js"></script>
+</body>
+</html>

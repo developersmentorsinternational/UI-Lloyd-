@@ -1,0 +1,59 @@
+@import '../../LESS/variables.less';
+@import '../../LESS/mixins.less';
+
+
+header{
+    .center-flex(space-between);
+    position: fixed;
+    width: 100%;
+    // padding: 5px;
+    // border: 2px solid @mentors-blue;
+    margin: 0 0 10px 0;
+    // background-color: @mentors-blue;
+    .nav-img{
+        .center-flex;
+        width: 69%; 
+        border-radius: 10px; 
+        margin:5px; 
+        padding: 2px;    
+    }
+    // @media () {
+    //     a:hover {
+    //       color: @mentors-green;
+    //     }
+    //   }
+
+    nav{
+        
+        width: 30%;
+        .center-flex;
+        flex-direction: column;
+        a{
+            .center-flex;
+            width: 15%;
+            font-size: 3.2rem; 
+            text-decoration: none;
+            color: @white; 
+            margin: 2.5px 5px;
+        }
+       
+    }
+    @media @tablet{
+        margin: 0 0 10px 0;
+        .center-flex();
+        nav{
+            .center-flex(space-around);
+            flex-direction: row;
+            align-items: space-between;
+            width: 50%;
+        }
+        .nav-img{
+            .center-flex;
+        }
+    }
+    @media @desktop{
+        .center-flex(center, center)
+        
+    }
+}
+

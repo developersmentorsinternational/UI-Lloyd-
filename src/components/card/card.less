@@ -1,0 +1,55 @@
+
+.card{
+    height: 90%;
+    width: 450px;
+    color: white;
+    line-height: 1.5;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 2rem 2rem;
+    border: 2px #eee solid;
+    border-radius: 15px;
+    margin: 25px;
+    .center-flex(space-evenly, center);
+    flex-direction: column;
+    text-align: center;
+    h3{
+        margin-top: 2rem;
+    }
+    // p{
+
+    // }
+    img{
+        border-radius: 15px;
+        width: 95%;
+    }
+    iframe{
+        max-width: 95%;
+        border-radius: 15px;
+    }
+    button.card-button{
+        background-color:@mentors-blue;
+        height: 70px;
+        width: 60%;
+        border:1px solid @white;
+        border-radius: 15px;
+        font-size: 2.5rem;
+        animation: pulse 15s infinite;
+        
+    }
+    @media @tablet{
+        width: 750px;
+        img{
+            margin-bottom: 2rem;
+        }
+        iframe{
+            margin-bottom: 2rem;
+        }
+    }
+    @media @desktop{
+        width: 950px;
+        button.card-button{
+            margin-top: 2rem;
+            width: 50%;
+        }
+    }
+}

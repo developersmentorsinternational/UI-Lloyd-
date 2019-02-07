@@ -1,0 +1,51 @@
+//Vars and Mixins
+@import './LESS/variables.less';
+@import './LESS/mixins.less';
+
+//General Styles
+@import './LESS/reset.less';
+@import './LESS/global.less';
+
+// Components
+@import './components/header/header.less';
+@import './components/splash/splash.less';
+@import './components/card/card.less';
+@import './components/footer/footer.less';
+
+
+//Escapes
+@mobile: ~"(min-width: 500px)";
+@tablet: ~"(min-width:  800px)";
+@desktop: ~"(min-width: 1000px)";
+
+
+//
+body{
+    background-image: url('./img/mobileWidthHeader.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    @media @tablet{
+        background-image: url('./img/fullWidthHeader.jpg');
+    }
+}
+
+section{
+    .center-flex;
+}
+
+main{
+    z-index: 1000;
+    width: 6000px;
+    .center-flex;
+    align-content: center;
+}
+
+
+.scroll
+{
+    position: fixed;
+    top: 20%;
+    bottom: 50px;
+    left: 0;
+}
