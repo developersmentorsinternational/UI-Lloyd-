@@ -10,7 +10,13 @@ footer{
     // border: 2px solid @mentors-blue;
     // margin: 0 0 10px 0;
     // background-color: @mentors-blue;
-    // .footer-left{}
+    .footer-left{
+        .center-flex(flex-end,);
+        h2{
+            color: @white;
+            font-size: 5rem; 
+        }
+    }
     .footer-center{
         .center-flex;
         .donate{
@@ -31,7 +37,26 @@ footer{
         // }
 
     }
-    // .footer-right{}
+    .footer-right{
+        .center-flex;
+        h2{
+            color: @white;
+            font-size: 5rem; 
+        }
+    }
     @media @tablet{}
-    @media @desktop{}
+    @media @desktop{
+        .footer-left{
+            .center-flex;
+            h2{
+                display:none;
+            }
+        }
+        .footer-right{
+            .center-flex;
+            h2{
+                display:none;
+            }
+        }
+    }
 }

@@ -2,7 +2,7 @@
 
 
 // LocalDom 
-
+// class siteContent
 const siteContent = {
     "nav": {
       "nav-img": "<img src='../src/img/mentors-intl_logo.png' alt='mentors logo'>",
