@@ -201,6 +201,14 @@ header nav a {
   margin: 2.5px 5px;
 }
 @media (min-width:  800px) {
+  header .tab-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #FFFFFF;
+  }
+}
+@media (min-width:  800px) {
   header {
     margin: 0 0 10px 0;
     display: flex;
@@ -293,15 +301,36 @@ header nav a {
   flex-direction: column;
   text-align: center;
 }
+.card .tab-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 50%;
+  height: 25px;
+  border: 1px solid white;
+  margin-top: 5px;
+  padding: 0;
+}
+.card .tab-nav .link {
+  border: 1px solid white;
+  margin: 0;
+  width: 25%;
+  height: 100%;
+  cursor: pointer;
+}
+.card .tab-nav .active-link {
+  background-color: #009DDC;
+}
 .card h3 {
   margin-top: 2rem;
 }
 .card img {
   border-radius: 15px;
-  width: 95%;
+  width: 70%;
+  max-height: 40%;
 }
 .card iframe {
-  max-width: 95%;
+  max-width: 70%;
   border-radius: 15px;
 }
 .card button.card-button {
@@ -337,7 +366,7 @@ footer {
   position: fixed;
   bottom: 0;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   width: 100%;
   max-height: 75px;
@@ -350,6 +379,9 @@ footer .footer-left {
 footer .footer-left h2 {
   color: #FFFFFF;
   font-size: 5rem;
+}
+footer .footer-left img {
+  height: 50px;
 }
 footer .footer-center {
   display: flex;
@@ -371,6 +403,9 @@ footer .footer-right {
 footer .footer-right h2 {
   color: #FFFFFF;
   font-size: 5rem;
+}
+footer .footer-right img {
+  height: 50px;
 }
 @media (min-width: 1000px) {
   footer .footer-left {
@@ -408,7 +443,8 @@ section {
 }
 main {
   z-index: 1000;
-  width: 6000px;
+  width: 4000vw;
+  min-width: 4000vw;
   display: flex;
   justify-content: center;
   align-items: center;
