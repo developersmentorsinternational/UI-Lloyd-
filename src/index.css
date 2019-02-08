@@ -298,7 +298,8 @@ header nav a {
 }
 .card img {
   border-radius: 15px;
-  width: 95%;
+  width: 90%;
+  max-height: 40%;
 }
 .card iframe {
   max-width: 95%;
@@ -413,6 +414,16 @@ main {
   justify-content: center;
   align-items: center;
   align-content: center;
+}
+@media (min-width:  800px) {
+  main {
+    width: 100vw;
+  }
+}
+@media (min-width: 1000px) {
+  main {
+    width: 1000vw;
+  }
 }
 .scroll {
   position: fixed;
