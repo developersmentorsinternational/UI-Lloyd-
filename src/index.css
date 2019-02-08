@@ -318,7 +318,7 @@ header nav a {
   height: 100%;
   cursor: pointer;
 }
-.card .tab-nav .link .active-link {
+.card .tab-nav .active-link {
   background-color: #009DDC;
 }
 .card h3 {
